@@ -1,0 +1,16 @@
+{
+    creative_override: bool
+        = true
+        #
+    
+    register: {
+        in_inventory: bool
+            = true
+            #
+
+        item_entities: bool
+            = true
+            #
+
+    }
+}

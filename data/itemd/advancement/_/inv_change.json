@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "o": {
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "rewards": {
+      "function": "itemd:_/adv/inv_change"
+    }
+  }
+  

@@ -1,0 +1,12 @@
+> itemd <> itemd
+% AS [item]
+--------------------
+.
+--------------------
+.
+--------------------
+! item is first observed by itemd (i.e. introduced to the world).
+--------------------
+# [item] is an item_display entity.
+# [item]'s {item} is initially set to the observed item; it also represents what the final item (item actually seen by players) will be.
+#- for example: if a subscriber function always sets {item} to be a slimeball, all new items (not already registered) in the world will always be transformed into slimeballs (making the game impossible).
