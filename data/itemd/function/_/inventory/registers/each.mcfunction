@@ -5,25 +5,20 @@
 
 # get {..give.a} {..give.b} --
 data merge storage itemd:_ {var:{inventory:{give:{a:'', b:''}}}}
-execute store result score *x _itemd run data get storage itemd:_ var.inventory.registers[-1].Slot
+
+execute store success score *x _itemd if data storage itemd:_ var.inventory.registers[-1].special_path
 
 # standard slots:
-execute if score *x _itemd matches 0..35 run data merge storage itemd:_ {var:{inventory:{give:{a:'container.'}}}}
-execute if score *x _itemd matches 0..35 store result storage itemd:_ var.inventory.give.b int 1 run scoreboard players get *x _itemd
+execute if score *x _itemd matches 0 run data merge storage itemd:_ {var:{inventory:{give:{a:'container.'}}}}
+execute if score *x _itemd matches 0 store result storage itemd:_ var.inventory.give.b int 1 run data get storage itemd:_ var.inventory.registers[-1].Slot
 
-# armor:
-execute if score *x _itemd matches 100..103 run data merge storage itemd:_ {var:{inventory:{give:{a:'armor.'}}}}
-execute if score *x _itemd matches 100 run data merge storage itemd:_ {var:{inventory:{give:{b:'feet'}}}}
-execute if score *x _itemd matches 101 run data merge storage itemd:_ {var:{inventory:{give:{b:'legs'}}}}
-execute if score *x _itemd matches 102 run data merge storage itemd:_ {var:{inventory:{give:{b:'chest'}}}}
-execute if score *x _itemd matches 103 run data merge storage itemd:_ {var:{inventory:{give:{b:'head'}}}}
-
-execute if score *x _itemd matches -106 run data merge storage itemd:_ {var:{inventory:{give:{a:'weapon.', b:'offhand'}}}}
-# --
+# special slots:
+execute if score *x _itemd matches 1 run data modify storage itemd:_ var.inventory.give.a set from storage itemd:_ var.inventory.registers[-1].special_path
 
 # register:
 data modify storage itemd:_ register.item set from storage itemd:_ var.inventory.registers[-1]
-data remove storage itemd:_ register.item.Slot
+execute if score *x _itemd matches 0 run data remove storage itemd:_ register.item.Slot
+execute if score *x _itemd matches 1 run data remove storage itemd:_ register.item.special_path
 function itemd:_/register/main
 data modify storage itemd:_ var.inventory.give merge from storage itemd:_ register.item
 
