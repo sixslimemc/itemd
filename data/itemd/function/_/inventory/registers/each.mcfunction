@@ -4,7 +4,7 @@
 #--------------------
 
 # get {..give.a} {..give.b} --
-data merge storage itemd:_ {var:{inventory:{give:{a:'', b:''}}}}
+data modify storage itemd:_ var.inventory.give set value {a:'', b:''}
 
 execute store success score *x _itemd if data storage itemd:_ var.inventory.registers[-1].special_path
 
