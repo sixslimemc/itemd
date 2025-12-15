@@ -1,3 +1,5 @@
 #> itemd:_/entrypoints/disable
 # ENTRYPOINT: tick
-schedule function itemd:_/entrypoints/item_check 1t replace
+
+schedule clear itemd:_/main/entity/tick
+execute if data storage itemd:config register{item_entities:true} run function itemd:_/main/entity/tick
