@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[itemd:data] to struct Data {
-
-}

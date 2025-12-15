@@ -11,6 +11,11 @@ dispatch minecraft:storage[itemd:_] to struct {
     u: VariableRegister,
     /// in-scope temp
     x: VariableRegister,
+    data: struct {
+        register: struct {
+            item: any,
+        }
+    },
 }
 dispatch minecraft:storage[itemd:_/in] to struct {
     [any]: any
