@@ -1,6 +1,6 @@
 #> itemd:_/main/entity/tick
 #--------------------
-# _/entrypoints/item_check
+# _/entrypoints/entity_check
 #--------------------
 schedule function itemd:_/main/entity/tick 1t
 
