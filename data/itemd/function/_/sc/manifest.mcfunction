@@ -6,7 +6,7 @@ data remove storage slimecore:in manifest.pack
 data modify storage slimecore:in manifest.pack.pack_id set value "itemd"
 data modify storage slimecore:in manifest.pack.author_id set value "sixslime"
 data modify storage slimecore:in manifest.pack.version set value {major:0, minor:1, patch:0}
-data modify storage slimecore:in manifest.pack.url set value "TODO"
+data modify storage slimecore:in manifest.pack.url set value "https://TODO.com"
 
 data modify storage slimecore:in manifest.pack.display.name set value "ItemD"
 data modify storage slimecore:in manifest.pack.display.summary set value "TODO"
