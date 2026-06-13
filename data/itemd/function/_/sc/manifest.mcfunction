@@ -6,15 +6,15 @@ data remove storage slimecore:in manifest.pack
 data modify storage slimecore:in manifest.pack.pack_id set value "itemd"
 data modify storage slimecore:in manifest.pack.author_id set value "sixslime"
 data modify storage slimecore:in manifest.pack.version set value {major:0, minor:1, patch:0}
-data modify storage slimecore:in manifest.pack.url set value "https://TODO.com"
+data modify storage slimecore:in manifest.pack.url set value "https://github.com/sixslimemc/itemd/releases/download/v0.1.0/sixslime.itemd.0.1.0.zip"
 
 data modify storage slimecore:in manifest.pack.display.name set value "ItemD"
-data modify storage slimecore:in manifest.pack.display.summary set value "TODO"
+data modify storage slimecore:in manifest.pack.display.summary set value "Provides a hook for modification of items upon their generation."
 data modify storage slimecore:in manifest.pack.display.author_name set value "SixSlime"
 
 data modify storage slimecore:in manifest.pack.display.links.author set value "https://github.com/sixslimemc"
 data modify storage slimecore:in manifest.pack.display.links.info set value "https://github.com/sixslimemc/itemd"
-# data modify storage slimecore:in manifest.pack.display.links.versions set value "TODO"
+data modify storage slimecore:in manifest.pack.display.links.versions set value "https://github.com/sixslimemc/itemd/releases"
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
 data modify storage slimecore:in manifest.pack.entrypoints append value {id:"entity_check"}
