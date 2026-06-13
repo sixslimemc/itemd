@@ -1,4 +1,7 @@
-#> adv {!} inv_change
+#> itemd:_/adv/inv_change
+#--------------------
+# @ adv : _/inv_change
+#--------------------
 
 function itemd:_/main/inventory/trigger
 advancement revoke @s only itemd:_/inv_change
