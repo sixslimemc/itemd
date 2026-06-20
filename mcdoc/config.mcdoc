@@ -2,7 +2,6 @@
 dispatch minecraft:storage[itemd:config] to struct Config {
     creative_override: boolean,
     fix_vaults: boolean,
-    fix_locked_containers: boolean,
     register: struct {
         in_inventory: boolean,
         item_entities: boolean,

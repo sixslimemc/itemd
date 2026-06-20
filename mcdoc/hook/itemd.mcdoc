@@ -5,6 +5,5 @@ struct Hook {
 
 enum(int) SourceType {
     Item = 1,
-    ContainerLock = 2,
-    VaultKey = 3,
+    VaultKey = 2,
 }
