@@ -27,6 +27,7 @@ data remove storage itemd:_ t.inventory.registers[{components:{"minecraft:custom
 data remove storage itemd:_ t.inventory.registers[{components:{"minecraft:custom_data":{_:true}}}]
 
 # each register:
+data modify storage itemd:_ data.register.source_type set value 1
 execute if data storage itemd:_ t.inventory.registers[0] run function itemd:_/main/inventory/registers/each
 
 data remove storage itemd:_ t.inventory

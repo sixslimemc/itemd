@@ -1,2 +1,10 @@
 
-struct Hook {}
+struct Hook {
+    source_type: SourceType,
+}
+
+enum(int) SourceType {
+    Item = 1,
+    ContainerLock = 2,
+    VaultKey = 3,
+}

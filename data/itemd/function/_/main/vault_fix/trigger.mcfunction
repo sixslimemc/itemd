@@ -1,6 +1,6 @@
 #> itemd:_/main/vault_fix/trigger
 #--------------------
-# adv {!} click_vault
+# _/adv/click_vault
 #--------------------
 
 scoreboard players set *vault.ray_distance _itemd 5

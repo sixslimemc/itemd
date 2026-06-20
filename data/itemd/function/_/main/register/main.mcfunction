@@ -1,10 +1,8 @@
 #> itemd:_/main/register/main
 #--------------------
 # _/inventory/registers/each
+# _/entity/main
 #--------------------
-
-# PASS {register}
-# <-> item: item
 
 execute summon item_display run function itemd:_/main/register/proxy
 
