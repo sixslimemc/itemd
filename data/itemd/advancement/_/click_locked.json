@@ -8,7 +8,7 @@
 						"condition": "minecraft:location_check",
 						"predicate": {
 							"block": {
-								"nbt": "{lock:{items:[\"minecraft:stick\"]}}"
+								"nbt": "{lock:{items:\"minecraft:stick\"}}"
 							}
 						}
 					}
